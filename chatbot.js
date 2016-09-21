@@ -1,0 +1,1 @@
+$("#myDiv").text("chat-area");
