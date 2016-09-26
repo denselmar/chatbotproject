@@ -1,8 +1,13 @@
+var responses = {
+  "Hi": "Hello",
+  "How are you": "Good",
+}
+
 function speak() {
 
-var input =  document.getElementById('input').value;
+  var userInput = $("#input").val();
+  var response = responses[userInput];
 
-
-$("#chat-area").text(input);
-
+  $('#chat-area').prepend(response + "</br>");
+  $('#chat-area').prepend(userInput + "</br>");
 }
