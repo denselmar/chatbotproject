@@ -11,3 +11,8 @@ function speak() {
   $('#chat-area').prepend(response + "</br>");
   $('#chat-area').prepend(userInput + "</br>");
 }
+
+
+
+
+i hate life
