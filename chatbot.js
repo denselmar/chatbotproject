@@ -32,5 +32,3 @@ $(document).keyup(function(event) {
    speak();
  }
 });
-
-euf
