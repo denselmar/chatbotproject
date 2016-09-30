@@ -6,6 +6,10 @@ var responses = {
   "how old are you?": "I dont know to be honest",
   "where do you live?": "In your computer",
   "what is your name?": "I don't have one make use you imagination",
+  "what's up?": "the sky",
+  "what's your birthday?": "i don't know",
+  "where were you born?": "in a factory",
+  "how's life": "no response",
   "what time is it?": now
 }
 
