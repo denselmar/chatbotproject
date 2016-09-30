@@ -1,9 +1,12 @@
+var now = new Date(Date.now());
+
 var responses = {
-  "Hi": "Hello",
-  "How are you?": "Good",
-  "How old are you?": "I dont know to be honest",
-  "Where do you live?": "In your computer",
-  "What is your name?": "I don't have one make use you imagination",
+  "hi": "Hello",
+  "how are you?": "Good",
+  "how old are you?": "I dont know to be honest",
+  "where do you live?": "In your computer",
+  "what is your name?": "I don't have one make use you imagination",
+  "what time is it?": now
 }
 
 var fallbacks = ["ask another question", "what", "sure", "ok"];
@@ -11,6 +14,8 @@ var fallbacks = ["ask another question", "what", "sure", "ok"];
 function speak() {
 
   var userInput = $("#input").val();
+  userInput = userInput.toLowerCase();
+
   var response = responses[userInput];
 
 if(response == undefined) {
@@ -20,5 +25,10 @@ else{
   $('#chat-area').prepend(response + "</br>");
 }
   $('#chat-area').prepend(userInput + "</br>");
-ugh
 }
+
+$(document).keyup(function(event) {
+ if (event.keyCode == 13) {
+   speak();
+ }
+});
